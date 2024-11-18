@@ -1,0 +1,139 @@
+/* Variables */
+$primary-color: #800000;
+$secondary-color: #e6f7f7;
+$text-color: #333;
+$light-text-color: #666;
+$white: #ffffff;
+
+/* Mixins */
+@mixin flex-center($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin button-style($bg-color, $hover-color) {
+  background-color: $bg-color;
+  color: $white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+header {
+  background-color: $primary-color;
+  color: $white;
+  @include flex-center(space-between, center);
+  padding: 10px 20px;
+
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  nav a {
+    color: $white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Main Section */
+.main-news {
+  @include flex-center(flex-start, flex-start);
+  margin: 20px;
+  background-color: $secondary-color;
+  padding: 15px;
+  border-radius: 8px;
+
+  img {
+    width: 50%;
+    border-radius: 8px;
+  }
+
+  .news-content {
+    margin-left: 20px;
+
+    h1 {
+      color: $text-color;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* Latest News Section */
+.latest-news {
+  text-align: center;
+  padding: 20px;
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
+
+  .cards {
+    @include flex-center(center, center);
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .card {
+      background: $white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 250px;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+      img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: $text-color;
+      }
+
+      p {
+        font-size: 14px;
+        color: $light-text-color;
+        margin-bottom: 15px;
+      }
+
+      button {
+        background-color: #800000;
+        color: white;
+        
+      }
+    }
+  }
+}
