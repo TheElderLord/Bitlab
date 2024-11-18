@@ -3,60 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BITLAB NEWS</title>
+    <title>VK Clone</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">BITLAB NEWS</div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Sport</a>
-            <a href="#">Science</a>
-            <a href="#">Politics</a>
-            <a href="#">Finance</a>
-        </nav>
+        <div class="logo">VK</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Поиск">
+        </div>
     </header>
 
-    <main>
-        <section class="main-news">
-            <img src="https://media.gq-magazine.co.uk/photos/5d13ad7beef9216deaa007a4/16:9/w_2560%2Cc_limit/conor-mcgregor-01-gq-5oct18_getty_b.jpg" alt="Khabib vs Conor">
-            <div class="news-content">
-                <h1>Khabib to Conor: "It is the same thing"</h1>
-                <p>It's the same thing as the previous fight. If it's a first round finish, I'd back Conor. From the second and further, then Dustin wins.</p>
-                <p>The Russian — who retired in March with a record of 29-0 with eight knockouts — has submission victories over both McGregor and Poirier, so he knows a thing or two about their game plans and skillsets.</p>
-            </div>
-        </section>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="index.html">Моя страница</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Сообщения</a></li>
+                <li><a href="friends.html">Друзья</a></li>
+                <li><a href="#">Группы</a></li>
+                <li><a href="#">Фотографии</a></li>
+                <li><a href="#">Музыка</a></li>
+                <li><a href="#">Видео</a></li>
+            </ul>
+        </aside>
 
-        <section class="latest-news">
-            <h2>Latest news</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="https://e0.365dm.com/18/07/800x600/skysports-eden-hazard-chelsea_4364378.jpg?20180717152654" alt="Eden Hazard" width="300px" height="180px">
-                    <h3>Eden Hazard injury update</h3>
-                    <p>Real Madrid striker Eden Hazard injured again on last match with Sevilla FC.</p>
-                    <button>Read More</button>
+        <main>
+            <section class="profile">
+                <div class="profile-header">
+                    <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Profile Picture">
+                    <div class="profile-info">
+                        <h2>Arsen Myngbayev</h2>
+                        <p>Life is good :)</p>
+                        <p><strong>Дата рождения:</strong> 26 мая 1989 г.</p>
+                        <p><strong>Город:</strong> Алматы</p>
+                        <p><strong>Семейное положение:</strong> женат</p>
+                        <p><strong>Место работы:</strong> BITLAB Academy</p>
+                        <p><strong>Веб-сайт:</strong> <a href="#">http://www.elderlord.org</a></p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="https://al24news.com/wp-content/uploads/2024/11/2166660400_f-scaled-1.jpg" alt="Alvaro Morata" width="300px" height="180px">
-                    <h3>Alvaro Morata scores to Torino</h3>
-                    <p>Alvaro Morata scored 2 goals against Torino on 27th round of Serie A.</p>
-                    <button>Read More</button>
+                <div class="profile-stats">
+                    <div><strong>1,331</strong><br>друзей</div>
+                    <div><strong>224</strong><br>фото</div>
+                    <div><strong>95</strong><br>видеозаписей</div>
+                    <div><strong>969</strong><br>аудиозаписей</div>
+                    <div><strong>809</strong><br>групп</div>
+                    <div><strong>140</strong><br>статей</div>
                 </div>
-                <div class="card">
-                    <img src="https://www.kget.com/wp-content/uploads/sites/2/2024/09/66e39194ace861.92140200.jpeg?w=2560&h=1440&crop=1" alt="Canelo Alvarez" width="300px" height="180px">
-                    <h3>Canelo Alvarez rejected GGG rematch</h3>
-                    <p>Canelo Alvarez rejected Genadiy Golovkin request to rematch again.</p>
-                    <button>Read More</button>
+            </section>
+
+            <section class="friends">
+                <h3>Друзья</h3>
+                <div class="friend-list">
+                    <div class="friend">
+                        <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Friend">
+                        <p>Михаил</p>
+                    </div>
+                    <div class="friend">
+                        <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Friend">
+                        <p>Женя</p>
+                    </div>
+                    <div class="friend">
+                        <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Friend">
+                        <p>Аслан</p>
+                    </div>
+                    <!-- Add more friends here -->
                 </div>
-                <div class="card">
-                    <img src="https://www.total-motorsport.com/wp-content/uploads/2024/07/SI202407280712_hires_jpeg_24bit_rgb-scaled.jpg" alt="Max Verstappen" width="300px" height="180px">
-                    <h3>Max Verstappen became a leader</h3>
-                    <p>Max Verstappen won the French Grand Prix at Paul Richard circuit.</p>
-                    <button>Read More</button>
+            </section>
+
+            <section class="photos">
+                <h3>Мои фотографии</h3>
+                <div class="photo-grid">
+                    <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Photo">
+                    <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Photo">
+                    <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Photo">
+                    <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Photo">
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
