@@ -2,85 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VK Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">VK</div>
-        <div class="search-bar">
-            <input type="text" placeholder="Поиск">
-        </div>
-    </header>
-
     <div class="container">
-        <aside class="sidebar">
-            <ul>
-                <li><a href="index.html">Моя страница</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Сообщения</a></li>
-                <li><a href="friends.html">Друзья</a></li>
-                <li><a href="#">Группы</a></li>
-                <li><a href="#">Фотографии</a></li>
-                <li><a href="#">Музыка</a></li>
-                <li><a href="#">Видео</a></li>
-            </ul>
-        </aside>
-
-        <main>
-            <section class="profile">
-                <div class="profile-header">
-                    <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Profile Picture">
-                    <div class="profile-info">
-                        <h2>Arsen Myngbayev</h2>
-                        <p>Life is good :)</p>
-                        <p><strong>Дата рождения:</strong> 26 мая 1989 г.</p>
-                        <p><strong>Город:</strong> Алматы</p>
-                        <p><strong>Семейное положение:</strong> женат</p>
-                        <p><strong>Место работы:</strong> BITLAB Academy</p>
-                        <p><strong>Веб-сайт:</strong> <a href="#">http://www.elderlord.org</a></p>
-                    </div>
+        <div class="main">
+            <div class="currencyPicker">
+                <div class="text">Enter Amount</div>
+                <div class="currencyInput">
+                    <input type="number" id="CurrencyEnter"> 
+                    <select name="currencySelector" id="CurrencySelector">
+                        <option value="USD">USD</option>
+                        <option value="KZT">KZT</option>
+                        <option value="EUR">EUR</option>
+                    </select>
                 </div>
-                <div class="profile-stats">
-                    <div><strong>1,331</strong><br>друзей</div>
-                    <div><strong>224</strong><br>фото</div>
-                    <div><strong>95</strong><br>видеозаписей</div>
-                    <div><strong>969</strong><br>аудиозаписей</div>
-                    <div><strong>809</strong><br>групп</div>
-                    <div><strong>140</strong><br>статей</div>
+            </div>
+            <div class="currencyShower">
+                <div class="text">KZT (Tenge)</div>
+                <div class="currencyInput">
+                    <input id="kztin" type="number" disabled> 
                 </div>
-            </section>
-
-            <section class="friends">
-                <h3>Друзья</h3>
-                <div class="friend-list">
-                    <div class="friend">
-                        <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Friend">
-                        <p>Михаил</p>
-                    </div>
-                    <div class="friend">
-                        <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Friend">
-                        <p>Женя</p>
-                    </div>
-                    <div class="friend">
-                        <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Friend">
-                        <p>Аслан</p>
-                    </div>
-                    <!-- Add more friends here -->
+            </div>
+            <div class="currencyShower">
+                <div class="text">EUR (Euro)</div>
+                <div class="currencyInput">
+                    <input id="eurin" type="number" disabled> 
                 </div>
-            </section>
-
-            <section class="photos">
-                <h3>Мои фотографии</h3>
-                <div class="photo-grid">
-                    <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Photo">
-                    <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Photo">
-                    <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Photo">
-                    <img src="https://sun9-14.userapi.com/impg/TBbXLL2frNNuok49EX8LYm5eA1QNujP-FpTcwg/1A3mBmh-F6U.jpg?size=860x870&quality=96&sign=4281fcc0086d514f127ae5ef1aa856f5&type=album" alt="Photo">
+            </div>
+            <div class="currencyShower">
+                <div class="text">USD (Dollar)</div>
+                <div class="currencyInput">
+                    <input id="usdin" type="number" disabled> 
                 </div>
-            </section>
-        </main>
+            </div>
+        </div>
     </div>
+    <script src="js/api.js"></script>
 </body>
 </html>
